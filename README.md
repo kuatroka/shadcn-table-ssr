@@ -1,3 +1,22 @@
+# Stack
+    "@sveltejs/adapter-auto": "^3.0.0",
+    "@sveltejs/kit": "^2.0.4",
+    "@sveltejs/vite-plugin-svelte": "^3.0.1",
+    "drizzle-kit": "^0.20.7",
+    "prettier-plugin-svelte": "^3.1.2",
+    "prettier-plugin-tailwindcss": "^0.5.9",
+    "svelte": "^4.2.8",
+    "svelte-headless-table": "^0.17.7",
+    "tailwindcss": "^3.3.6",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.10"
+
+    "@sveltejs/adapter-node": "^2.0.0",
+    "@types/better-sqlite3": "^7.6.8",
+    "better-sqlite3": "^9.2.2",
+
+
+
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
