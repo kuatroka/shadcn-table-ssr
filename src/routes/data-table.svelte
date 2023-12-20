@@ -44,18 +44,7 @@
 	});
 
 	const columns = table.createColumns([
-	table.column({
-			header: "ID",
-			accessor: "id",
-			plugins: {
-				sort: {
-					disable: true
-				},
-				filter: {
-					exclude: true
-				}
-			}
-		}),
+
 	
 		table.column({
 			header: "CIK",
@@ -63,6 +52,26 @@
 			plugins: { sort: { disable: false }, filter: { exclude: false } }
 		}),
 		table.column({ header: "Superinvestor", accessor: "cik_name"}),
+
+		table.column({
+			header: "Cumulative TWRR",
+			accessor: "cum_twrr_cons",
+			cell: ({ value }) => {
+				const formatted = new Intl.NumberFormat("en-US", {
+					style: "percent",
+				}).format(value);
+				return formatted;
+    },
+			plugins: {
+				sort: {
+					disable: false
+				},
+				filter: {
+					exclude: true
+				}
+			}
+		}),
+		
 		table.column({
 			header: "Actions",
 			accessor: ({ cik }) => cik,
