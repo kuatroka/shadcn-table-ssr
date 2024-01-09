@@ -1,4 +1,4 @@
-import type { PageServerLoad } from './test/$types';
+import type { PageServerLoad } from './$types';
 import { getCik } from '$lib/server/db/sqlite';
 
 export const load = async ({ url }) => {

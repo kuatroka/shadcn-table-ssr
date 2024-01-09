@@ -71,7 +71,7 @@
 				}
 			}
 		}),
-		
+
 		table.column({
 			header: "Actions",
 			accessor: ({ cik }) => cik,
@@ -148,7 +148,7 @@
 	const handleFilterChange = debounce(() => {
 	goto(`?limit=${$pageSize}&skip=${$pageSize * $pageIndex}&q=${filter}&order_by=${order_by}&order_dir=${order_dir}`,
 		{  replaceState: true, keepFocus: true });
-  }, 100);
+  }, 200);
 
 // TODO: Displayed entries and pages are wrong when clicking next multiple Times
 // and then using search box. The paging gets all messed up
